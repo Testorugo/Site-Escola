@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <h1>Formulário de Inscrição</h1>
+      <form action="https://660b0f89ccda4cbc75dc5884.mockapi.io/api/v1/Aluno" method="POST" class="form-inscricao" onsubmit="return validarFormulario()">
+        <h2>Informacoes do Aluno</h2>
+        <div class="form-group">
+          <label for="nomeAluno">Nome*:</label>
+          <input type="text" id="nomeAluno" name="nomeAluno" required>
+        </div>
+        <div class="form-group">
+          <label for="enderecoAluno">Endereço:</label>
+          <input type="text" id="enderecoAluno" name="enderecoAluno">
+        </div>
+        <div class="form-group">
+          <label for="bairroAluno">Bairro:</label>
+          <input type="text" id="bairroAluno" name="bairroAluno">
+        </div>
+        <div class="form-group">
+          <label for="cidadeAluno">Cidade:</label>
+          <input type="text" id="cidadeAluno" name="cidadeAluno">
+        </div>
+        <div class="form-group">
+          <label for="numeroAluno">Número:</label>
+          <input type="text" id="numeroAluno" name="numeroAluno">
+        </div>
+        <div class="form-group">
+          <label for="cepAluno">CEP:</label>
+          <input type="text" id="cepAluno" name="cepAluno">
+        </div>
+        <div class="form-group">
+          <label for="complementoAluno">Complemento:</label>
+          <input type="text" id="complementoAluno" name="complementoAluno">
+        </div>
+        <div class="form-group">
+          <label for="estadoAluno">Estado:</label>
+          <input type="text" id="estadoAluno" name="estadoAluno">
+        </div>
+        <div class="form-group">
+          <label for="telefoneAluno">Telefone:</label>
+          <input type="text" id="telefoneAluno" name="telefoneAluno">
+        </div>
+        <div class="form-group">
+          <label for="celularAluno">Celular*:</label>
+          <input type="text" id="celularAluno" name="celularAluno" required>
+        </div>
+        <div class="form-group">
+          <label for="emailAluno">E-mail*:</label>
+          <input type="email" id="emailAluno" name="emailAluno" required>
+        </div>
+        <div class="form-group">
+          <label for="corAluno">Cor*:</label>
+          <select id="corAluno" name="corAluno" required>
+            <option value="Branca">Branca</option>
+            <option value="Preta">Preta</option>
+            <option value="Parda">Parda</option>
+            <option value="Amarela">Amarela</option>
+            <option value="Indígena">Indígena</option>
+          </select>
+        </div>
+
+        <h2>Informacoes do Pai</h2>
+        <div class="form-group">
+          <label for="nomePai">Nome*:</label>
+          <input type="text" id="nomePai" name="nomePai" required>
+        </div>
+        <div class="form-group">
+          <label for="dataNascimentoPai">Data de Nascimento:</label>
+          <input type="date" id="dataNascimentoPai" name="dataNascimentoPai">
+        </div>
+        <div class="form-group">
+          <label for="naturalidadePai">Naturalidade:</label>
+          <input type="text" id="naturalidadePai" name="naturalidadePai">
+        </div>
+        <div class="form-group">
+          <label for="instrucaoPai">Instrução:</label>
+          <input type="text" id="instrucaoPai" name="instrucaoPai">
+        </div>
+        <div class="form-group">
+          <label for="profissaoPai">Profissão:</label>
+          <input type="text" id="profissaoPai" name="profissaoPai">
+        </div>
+        <div class="form-group">
+          <label for="celularPai">Celular*:</label>
+          <input type="text" id="celularPai" name="celularPai" required>
+        </div>
+        <div class="form-group">
+          <label for="emailPai">E-mail*:</label>
+          <input type="email" id="emailPai" name="emailPai" required>
+        </div>
+        <div class="form-group">
+          <label for="cpfPai">CPF*:</label>
+          <input type="text" id="cpfPai" name="cpfPai" required>
+        </div>
+        <div class="form-group">
+          <label for="responsavelFinanceiroPai">Responsável Financeiro:</label>
+          <input type="checkbox" id="responsavelFinanceiroPai" name="responsavelFinanceiroPai">
+        </div>
+
+        <h2>Informacoes da Mãe</h2>
+        <div class="form-group">
+          <label for="nomeMae">Nome*:</label>
+          <input type="text" id="nomeMae" name="nomeMae" required>
+        </div>
+        <div class="form-group">
+          <label for="dataNascimentoMae">Data de Nascimento:</label>
+          <input type="date" id="dataNascimentoMae" name="dataNascimentoMae">
+        </div>
+        <div class="form-group">
+          <label for="naturalidadeMae">Naturalidade:</label>
+          <input type="text" id="naturalidadeMae" name="naturalidadeMae">
+        </div>
+        <div class="form-group">
+          <label for="instrucaoMae">Instrução:</label>
+          <input type="text" id="instrucaoMae" name="instrucaoMae">
+        </div>
+        <div class="form-group">
+          <label for="profissaoMae">Profissão:</label>
+          <input type="text" id="profissaoMae" name="profissaoMae">
+        </div>
+        <div class="form-group">
+          <label for="celularMae">Celular*:</label>
+          <input type="text" id="celularMae" name="celularMae" required>
+        </div>
+        <div class="form-group">
+          <label for="emailMae">E-mail*:</label>
+          <input type="email" id="emailMae" name="emailMae" required>
+        </div>
+        <div class="form-group">
+          <label for="cpfMae">CPF*:</label>
+          <input type="text" id="cpfMae" name="cpfMae" required>
+        </div>
+        <div class="form-group">
+          <label for="responsavelFinanceiroMae">Responsável Financeiro:</label>
+          <input type="checkbox" id="responsavelFinanceiroMae" name="responsavelFinanceiroMae">
+        </div>
+
+        <h2>Informacoes da aula escolhida</h2>
+        <div class="form-group">
+          <label for="cursoEscolhido">Nome da aula de reforço escolhida*:</label>
+          <input type="text" id="cursoEscolhido" name="cursoEscolhido" required>
+        </div>
+        <div class="form-group">
+          <label for="dataIngresso">Data de início*:</label>
+          <input type="date" id="dataIngresso" name="dataIngresso" required>
+        </div>
+        <div class="form-group">
+          <label for="valorCurso">Valor*:</label>
+          <input type="text" id="valorCurso" name="valorCurso" required>
+        </div>
+        <div class="form-group">
+          <label for="formaPagamento">Forma de Pagamento (Se for cartão, inserir a quantidade de parcelas)*:</label>
+          <input type="text" id="formaPagamento" name="formaPagamento" required>
+        </div>
+
+        <input type="submit" value="Enviar Inscrição">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
